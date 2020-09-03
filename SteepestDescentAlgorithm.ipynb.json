@@ -91,7 +91,7 @@
     }
    ],
    "source": [
-    "fig = pt.figure()\n",
+    "fig = plt.figure()\n",
     "ax = fig.gca(projection=\"3d\")\n",
     "\n",
     "xmesh, ymesh = np.mgrid[-2:2:0.1,-2:2:0.1]\n",
@@ -234,10 +234,10 @@
     }
    ],
    "source": [
-    "pt.axis(\"equal\")\n",
-    "pt.contour(xmesh, ymesh, fmesh, 50)\n",
+    "plt.axis(\"equal\")\n",
+    "plt.contour(xmesh, ymesh, fmesh, 50)\n",
     "it_array = np.array(guesses)\n",
-    "pt.plot(it_array.T[0], it_array.T[1], \"x-\")"
+    "plt.plot(it_array.T[0], it_array.T[1], \"x-\")"
    ]
   },
   {
